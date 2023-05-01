@@ -15,42 +15,45 @@
 :dataset
     a rb:Dataset, dcat:Dataset ;
     dcterms:conformsTo <https://w3id.org/riverbench/schema/metadata> ;
-    dcterms:identifier "[YOUR DATASET ID (only a-z, 0-9, -)]" ;
+    dcterms:identifier "politiquices" ;
 
-    dcterms:title "[HUMAN-READABLE NAME OF YOUR DATASET]"@en ;
-    dcterms:description "[ELABORATED DESCRIPTION OF THE DATASET]"@en ;
-    dcterms:issued "[DATE OF INITIAL SUBMISSION, YYYY-MM-DD]"^^xsd:date ;
+    dcterms:title "Politiquices"@en ;
+    dcterms:description "Support and opposition relations extracted from news articles archived in Arquivo.pt. The dataset describes news articles in Portuguese and the presented political stances. [Dataset source](https://data.europa.eu/data/datasets/6130e331078190fd0c6c3819?locale=en), [more information about the project (Portuguese)](https://www.politiquices.pt/about)."@en ;
+    dcterms:issued "2023-05-01"^^xsd:date ;
 
     # License and attribution
-    # SPDX license list: https://spdx.org/licenses/
-    dcterms:license <SPDX-LICENSE-URL> ;
-    # Feel free to add more creators or use any FOAF properties here
+    dcterms:license <https://spdx.org/licenses/CC-BY-4.0> ;
     dcterms:creator [
-        foaf:name "[YOUR NAME]" ;
-        foaf:nick "[YOUR NICK]" ;
-        foaf:homepage <LINK-TO-YOUR-PAGE>
+        foaf:name "David Soares Batista" ;
+        rdfs:comment "Dataset creator" ;
+        foaf:homepage <https://www.politiquices.pt/about> ;
+    ] , [
+        foaf:name "Piotr Sowiński" ;
+        foaf:nick "Ostrzyciel" ;
+        rdfs:comment "Processing the dataset" ;
+        foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
     ] ;
     
     # Themes
-    # Full list of themes: https://w3id.org/riverbench/schema/theme.ttl
-    dcat:theme <ADD-AT-LEAST-ONE-THEME> ;
+    dcat:theme rbt:news, rbt:political, rbt:temporal ;
 
     # Technical metadata
-    # URIs of the ontologies used in the dataset
-    rb:usesOntology <ADD-ONTOLOGY-URIS> ;
-    # Set to number of stream elements in the dataset
-    rb:hasStreamElementCount -1 ;
-    # One of: rb:triples, rb:quads, rb:graphs
-    rb:hasStreamElementType <STREAM-ELEMENT-TYPE> ;
+    rb:usesOntology 
+        <https://w3id.org/riverbench/schema/metadata> ,
+        <http://purl.org/dc/elements/1.1/> ,
+        <http://www.politiquices.pt/> ,
+        <http://www.wikidata.org/entity/> ,
+        <http://www.wikidata.org/prop/direct/>
+    ;
+    rb:hasStreamElementCount 17773 ;
+    rb:hasStreamElementType rb:triples ;
     rb:hasStreamElementSplit [
-        a <SPLIT-TYPE> ;
-        rdfs:comment "[FURTHER EXPLANATION ON THE SPLIT]"@en
+        a rb:TopicStreamElementSplit ;
+        rdfs:comment "Each stream element corresponds to one news article."@en
     ] ;
-    rb:conformsToRdf11 "" ; # true or false
-    rb:conformsToRdfStarDraft_20211217 "" ; # true or false
-    rb:usesGeneralizedRdfDatasets "" ; # true or false
-    rb:usesGeneralizedTriples "" ; # true or false
-    rb:usesRdfStar "" ; # true or false
-    
-    # Add any additional metadata here (e.g., temporal resolution)
+    rb:conformsToRdf11 true ;
+    rb:conformsToRdfStarDraft_20211217 true ;
+    rb:usesGeneralizedRdfDatasets false ;
+    rb:usesGeneralizedTriples false ;
+    rb:usesRdfStar false ;
 .
