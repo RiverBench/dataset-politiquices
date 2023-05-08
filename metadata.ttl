@@ -36,6 +36,10 @@
         foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
         rbdoc:hasDocWeight 2 ;
     ] ;
+    dcterms:source 
+        <http://data.europa.eu/88u/dataset/6130e331078190fd0c6c3819> ,
+        <https://www.politiquices.pt/about>
+    ;
     
     # Themes
     dcat:theme rbt:news, rbt:political, rbt:temporal ;
