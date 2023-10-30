@@ -7,6 +7,7 @@
 @prefix rbt: <https://w3id.org/riverbench/schema/theme#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix stax: <https://w3id.org/stax/ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # This file contains the manually written metadata for the dataset.
@@ -53,7 +54,15 @@
         <http://www.wikidata.org/prop/direct/>
     ;
     rb:hasStreamElementCount 17773 ;
-    rb:hasStreamElementType rb:triples ;
+    stax:hasStreamTypeUsage [
+        a stax:RdfStreamTypeUsage ;
+        rdfs:comment "The dataset can be viewed as a stream of graphs corresponding to news articles."@en ;
+        stax:hasStreamType stax:graphStream
+    ] , [
+        a stax:RdfStreamTypeUsage ;
+        rdfs:comment "The dataset can be viewed as a flattened stream of triples."@en ;
+        stax:hasStreamType stax:flatTripleStream
+    ] ;
     rb:hasStreamElementSplit [
         a rb:TopicStreamElementSplit ;
         rdfs:comment "Each stream element corresponds to one news article."@en
