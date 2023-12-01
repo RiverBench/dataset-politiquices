@@ -8,6 +8,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
 @prefix stax: <https://w3id.org/stax/ontology#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # This file contains the manually written metadata for the dataset.
@@ -49,7 +50,7 @@
     ;
 
     # Technical metadata
-    rb:usesOntology 
+    void:vocabulary 
         <https://w3id.org/riverbench/schema/metadata> ,
         <http://purl.org/dc/elements/1.1/> ,
         <http://www.politiquices.pt/> ,
