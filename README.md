@@ -11,7 +11,7 @@
 [![.github/workflows/release.yaml](https://github.com/RiverBench/dataset-politiquices/actions/workflows/release.yaml/badge.svg?event=push)](https://github.com/RiverBench/dataset-politiquices/actions/workflows/release.yaml)
 
 
-# politiquices (development version)
+# Dataset: politiquices (development version)
 
 Support and opposition relations extracted from news articles archived in Arquivo.pt. The dataset describes news articles in Portuguese and the presented political stances. [Dataset source](https://data.europa.eu/data/datasets/6130e331078190fd0c6c3819?locale=en), [more information about the project (Portuguese)](https://www.politiquices.pt/about).
     
@@ -47,7 +47,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
     - [http://data.europa.eu/88u/dataset/6130e331078190fd0c6c3819](http://data.europa.eu/88u/dataset/6130e331078190fd0c6c3819)
     - [https://www.politiquices.pt/about](https://www.politiquices.pt/about)
 - **<abbr title="Date of formal issuance of the resource.">Date Issued</abbr>**: 2023-05-01
-- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2024-08-26
+- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2024-08-27
 - **<abbr title="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.">Landing page</abbr>**: [politiquices (dev)](https://w3id.org/riverbench/datasets/politiquices/dev)
 - **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: Metadata ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
 
