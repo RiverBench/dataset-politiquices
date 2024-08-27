@@ -23,7 +23,7 @@
     dcterms:title "Politiquices"@en ;
     dcterms:description """Support and opposition relations extracted from news articles archived in Arquivo.pt. The dataset describes news articles in Portuguese and the presented political stances. [Dataset source](https://data.europa.eu/data/datasets/6130e331078190fd0c6c3819?locale=en), [more information about the project (Portuguese)](https://www.politiquices.pt/about).
     
-**Changed in 1.0.3**: Previous versions of the dataset contained literals with ASCII control codes (0x07, BEL). Although these are allowed in RDF, they are non-serializable in RDF/XML 1.1. To maintain better compatibility, all 21 instances of this character were replaced with whitespace (0x20, SP). The modified dataset has the exact same byte length in N-Triples/Turtle when uncompressed and the modification should not affect any benchmarks in a significant way. More details in [this GitHub issue](https://github.com/RiverBench/dataset-politiquices/issues/1)."""@en ;
+**Changed in 1.1.0**: Previous versions of the dataset contained literals with ASCII control codes (0x07, BEL). Although these are allowed in RDF, they are non-serializable in RDF/XML 1.1. To maintain better compatibility, all 21 instances of this character were replaced with whitespace (0x20, SP). The modified dataset has the exact same byte length in N-Triples/Turtle when uncompressed and the modification should not affect any benchmarks in a significant way. More details in [this GitHub issue](https://github.com/RiverBench/dataset-politiquices/issues/1)."""@en ;
     dcterms:issued "2023-05-01"^^xsd:date ;
 
     # License and attribution
